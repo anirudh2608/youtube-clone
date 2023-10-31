@@ -103,7 +103,7 @@ const RelatedVideos = ({ video: { id, snippet, contentDetails }, searchVideo, su
 
                 {
                     (searchVideo || subscription) && (
-                        isVideo && <p className="mt-1">
+                        isVideo && <p className="mt-1 RelatedVideos__desc">
                             {description}
                         </p>
                     )
@@ -122,7 +122,7 @@ const RelatedVideos = ({ video: { id, snippet, contentDetails }, searchVideo, su
                         {channelTitle}
                     </p>
                 </div>
-                
+
                 {subscription &&
                     <p className='mt-2'>
 
